@@ -1,0 +1,48 @@
+{
+  "name": "vue-test-utils-typescript-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "jest"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-typescript": "^3.0.0-rc.9",
+    "@vue/cli-service": "^3.0.0-rc.9",
+    "@vue/test-utils": "^1.0.0-beta.22",
+    "jest": "^23.4.2",
+    "ts-jest": "^23.0.1",
+    "typescript": "^2.9.0",
+    "vue-jest": "^2.6.0",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "json",
+      "vue"
+    ],
+    "transform": {
+      ".*\\.(vue)$": "vue-jest",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testURL": "http://localhost/",
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$"
+  }
+}
